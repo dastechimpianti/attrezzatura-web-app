@@ -25,7 +25,7 @@ export default function AttrezzaturaApp() {
   return (
     <div className="container mt-5">
       <h1 className="text-center mb-4">Inventario Attrezzature</h1>
-      <table className="table table-bordered">
+      <table className="table-bordered custom-table">
         <thead>
           <tr>
             <th>Data</th>

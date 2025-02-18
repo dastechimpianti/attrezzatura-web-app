@@ -1,38 +1,41 @@
-.App {
+/* App.css */
+
+/* Stili globali */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Contenitore principale */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Stile per la tabella personalizzata */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse; /* Rimuove gli spazi tra i bordi */
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #000; /* Bordo nero per ogni cella */
+  padding: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-table th {
+  background-color: #f2f2f2; /* Sfondo chiaro per le intestazioni */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Altri stili opzionali per migliorare l'aspetto */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
